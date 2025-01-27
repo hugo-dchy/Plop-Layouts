@@ -1,6 +1,6 @@
-name: 'Layout Custom'
+name: 'Plop Layout'
 type: module
-description: "Custom layouts for layout builder"
+description: "Plop Custom layouts for layout builder"
 core: 8.x
 core_version_requirement: ^10 || ^11
 package: 'Layout'

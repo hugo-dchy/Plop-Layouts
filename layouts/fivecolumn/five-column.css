@@ -1,0 +1,60 @@
+/*
+ * @file
+ * Provides the layout styles for layout_fivecol.
+ */
+
+.layout--five-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+.layout--five-column > .layout__region {
+  flex: 0 1 100%;
+}
+@media screen and (min-width: 640px) {
+  .layout--five-column {
+    display: grid;
+    gap: 1.5rem;
+    grid-column: span 2;
+    grid-template-columns: repeat(2, calc(50% - 0.75rem));
+  }
+  .layout--five-column .layout__region--fifth {
+    grid-column: 1 / span 2;
+    width: 100%;
+    justify-self: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  .layout--five-column {
+    grid-template-areas: "a a b b c c" "d d d e e e";
+    grid-template-columns: initial;
+  }
+  .layout--five-column .layout__region--first {
+    grid-area: a;
+  }
+  .layout--five-column .layout__region--second {
+    grid-area: b;
+  }
+  .layout--five-column .layout__region--third {
+    grid-area: c;
+  }
+  .layout--five-column .layout__region--fourth {
+    grid-area: d;
+  }
+  .layout--five-column .layout__region--fifth {
+    grid-area: e;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .layout--five-column {
+    gap: 2rem;
+    grid-template-columns: repeat(5, calc(20% - 1.666rem));
+
+  }
+  .layout--five-column .layout__region--first,
+  .layout--five-column .layout__region--second,
+  .layout--five-column .layout__region--third,
+  .layout--five-column .layout__region--fourth,
+  .layout--five-column .layout__region--fifth {
+    grid-area: initial;
+  }
+}

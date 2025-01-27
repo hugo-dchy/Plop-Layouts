@@ -1,21 +1,16 @@
 {#
 /**
  * @file
- * Default theme implementation to display a two-column layout.
+ * Default theme implementation for a three-column layout.
  *
  * Available variables:
+ * - in_preview: Whether the plugin is being rendered in preview mode.
  * - content: The content for this layout.
  * - attributes: HTML attributes for the layout <div>.
  *
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'layout',
-    'layout--twocol',
-  ]
-%}
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
 
@@ -28,6 +23,12 @@
     {% if content.second %}
       <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second') }}>
         {{ content.second }}
+      </div>
+    {% endif %}
+
+    {% if content.third %}
+      <div {{ region_attributes.third.addClass('layout__region', 'layout__region--third') }}>
+        {{ content.third }}
       </div>
     {% endif %}
 

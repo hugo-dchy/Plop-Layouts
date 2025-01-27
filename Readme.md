@@ -1,6 +1,6 @@
-# Drupal Layouts
+# Plop Layouts
 
-Custom Layout for the Drupal layout builder.  
+Plop custom Layout for the Drupal layout builder.
 
 ## Layout Available
 

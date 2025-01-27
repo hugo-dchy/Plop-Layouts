@@ -3,25 +3,29 @@
  * Provides the layout styles for layout_fourcol.
  */
 
-.layout--fourcol {
-  display: grid;
-  gap: 1.5rem;
+.layout--four-column {
+  display: flex;
+  flex-wrap: wrap;
 }
+.layout--four-column > .layout__region {
+  flex: 0 1 100%;
+}
+
 @media screen and (min-width: 500px) {
-  .layout--fourcol {
+  .layout--four-column {
+    display: grid;
+    gap: 1.5rem;
     grid-template-columns: repeat(2, calc(50% - 0.75rem));
   }
 }
 @media screen and (min-width: 1000px) {
-  .layout--fourcol {
+  .layout--four-column {
     grid-template-columns: repeat(4, calc(25% - 1.125rem));
   }
 }
 @media screen and (min-width: 1300px) {
-  .layout--fourcol {
+  .layout--four-column {
     gap: 2rem;
-  }
-  .layout--fourcol {
     grid-template-columns: repeat(4, calc(25% - 1.5rem));
   }
 }
