@@ -2,7 +2,7 @@ name: 'Layout Custom'
 type: module
 description: "Custom layouts for layout builder"
 core: 8.x
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^10 || ^11
 package: 'Layout'
 dependencies:
  - layout_builder:layout_builder
