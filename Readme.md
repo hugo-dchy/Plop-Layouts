@@ -15,7 +15,4 @@ Plop custom Layout for the Drupal layout builder.
 - Three Columns 50/25/25
 - Four Columns
 - Five Columns
-
-## TO DO
-
 - Six Columns

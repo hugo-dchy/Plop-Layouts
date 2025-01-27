@@ -1,0 +1,12 @@
+/**
+ * Base layout style
+ */
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+}
+.layout > .layout__region {
+  flex: 0 1 100%;
+}

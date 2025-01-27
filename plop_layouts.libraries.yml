@@ -2,19 +2,29 @@ plop_two_column:
   version: 1
   css:
     theme:
+      css/styles.css: {}
       layouts/twocolumn/two-column.css: {}
 plop_three_column:
   version: 1
   css:
     theme:
+      css/styles.css: {}
       layouts/threecolumn/three-column.css: {}
 plop_four_column:
   version: 1
   css:
     theme:
+      css/styles.css: {}
       layouts/fourcolumn/four-column.css: {}
 plop_five_column:
   version: 1
   css:
     theme:
+      css/styles.css: {}
       layouts/fivecolumn/five-column.css: {}
+plop_six_column:
+  version: 1
+  css:
+    theme:
+      css/styles.css: {}
+      layouts/sixcolumn/six-column.css: {}

@@ -1,0 +1,23 @@
+/*
+ * @file
+ * Provides the layout styles for six-column layout section.
+ */
+
+@media screen and (min-width: 640px) {
+  .layout--six-column {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, calc(50% - 0.75rem));
+  }
+}
+@media screen and (min-width: 900px) {
+  .layout--six-column {
+    grid-template-columns: repeat(3, calc(33.333% - 1rem));
+  }
+}
+@media screen and (min-width: 1300px) {
+  .layout--six-column {
+    gap: 2rem;
+    grid-template-columns: repeat(6, calc(16.6666% - 1.6666rem));
+  }
+}

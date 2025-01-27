@@ -3,14 +3,6 @@
  * Provides the layout styles for layout_fourcol.
  */
 
-.layout--four-column {
-  display: flex;
-  flex-wrap: wrap;
-}
-.layout--four-column > .layout__region {
-  flex: 0 1 100%;
-}
-
 @media screen and (min-width: 500px) {
   .layout--four-column {
     display: grid;
@@ -29,4 +21,3 @@
     grid-template-columns: repeat(4, calc(25% - 1.5rem));
   }
 }
-
